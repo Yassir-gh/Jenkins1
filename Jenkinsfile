@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Test1'
 		sh 'echo Test2'
+		sh 'echo Test3'
 		sh 'ls -a'
 		sh 'pwd'
             }
