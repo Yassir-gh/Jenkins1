@@ -12,7 +12,7 @@ pipeline {
 		sh 'echo Test2'
 		echo "env.JOB_NAME = ${env.JOB_NAME}"
 		echo "env.NODE_NAME = ${env.NODE_NAME}"
-		sh "echo '$USER'"
+		sh "echo \$USER"
 		sh 'ls -a'
 		sh 'pwd'
             }
