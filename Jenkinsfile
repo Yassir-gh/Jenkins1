@@ -13,7 +13,6 @@ pipeline {
 		echo "env.JOB_NAME = ${env.JOB_NAME}"
 		echo "env.NODE_NAME = ${env.NODE_NAME}"
 		sh "echo \$USER"
-		sh "printenv USER"
 		sh "printenv"
 		sh 'ls -a'
 		sh 'pwd'
