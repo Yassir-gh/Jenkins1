@@ -16,6 +16,8 @@ pipeline {
 		sh "printenv"
 		sh 'ls -a'
 		sh 'pwd'
+		sh "java -version"
+		sh "mvn --version"
             }
         }
 	stage('stage2') {
