@@ -10,7 +10,8 @@ pipeline {
             steps {
                 echo 'Test1'
 		sh 'echo Test2'
-		sh 'echo $USER'
+		sh 'echo env.JOB_NAME'
+		sh 'echo env.NODE_NAME'
 		sh 'ls -a'
 		sh 'pwd'
             }
